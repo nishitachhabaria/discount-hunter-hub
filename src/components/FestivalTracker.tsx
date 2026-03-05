@@ -3,10 +3,10 @@ import { CalendarDays, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const festivals = [
-  { name: "Amazon Great Indian Festival", platform: "Amazon", dates: "Oct 8 - Oct 15", status: "upcoming", deals: "50-80% off" },
-  { name: "Flipkart Big Billion Days", platform: "Flipkart", dates: "Oct 6 - Oct 13", status: "live", deals: "Up to 85% off" },
-  { name: "Myntra End of Season Sale", platform: "Myntra", dates: "Nov 1 - Nov 7", status: "upcoming", deals: "40-70% off" },
-  { name: "Croma Diwali Dhamaka", platform: "Croma", dates: "Oct 20 - Oct 30", status: "upcoming", deals: "30-60% off" },
+  { name: "Amazon Great Indian Festival", platform: "Amazon", url: "https://www.amazon.in", dates: "Oct 8 - Oct 15", status: "upcoming", deals: "50-80% off" },
+  { name: "Flipkart Big Billion Days", platform: "Flipkart", url: "https://www.flipkart.com", dates: "Oct 6 - Oct 13", status: "live", deals: "Up to 85% off" },
+  { name: "Myntra End of Season Sale", platform: "Myntra", url: "https://www.myntra.com", dates: "Nov 1 - Nov 7", status: "upcoming", deals: "40-70% off" },
+  { name: "Croma Diwali Dhamaka", platform: "Croma", url: "https://www.croma.com", dates: "Oct 20 - Oct 30", status: "upcoming", deals: "30-60% off" },
 ];
 
 const FestivalTracker = () => {
