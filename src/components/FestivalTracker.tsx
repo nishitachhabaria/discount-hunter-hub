@@ -24,41 +24,36 @@ const FestivalTracker = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {festivals.map((fest, i) => (
-            <a
-              key={i}
-              href={fest.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-card rounded-2xl border border-border shadow-card p-6 hover:shadow-card-hover transition-all group cursor-pointer"
-            >
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h3 className="font-semibold text-card-foreground font-display text-lg group-hover:text-primary transition-colors">{fest.name}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">{fest.dates}</p>
+            <a key={i} href={fest.url} target="_blank" rel="noopener noreferrer" className="block">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-card rounded-2xl border border-border shadow-card p-6 hover:shadow-card-hover transition-all group cursor-pointer h-full"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="font-semibold text-card-foreground font-display text-lg group-hover:text-primary transition-colors">{fest.name}</h3>
+                    <p className="text-sm text-muted-foreground mt-1">{fest.dates}</p>
+                  </div>
+                  <Badge
+                    variant={fest.status === "live" ? "default" : "secondary"}
+                    className={fest.status === "live" ? "bg-gradient-cta border-0 animate-pulse" : ""}
+                  >
+                    {fest.status === "live" ? "🔴 LIVE" : "Upcoming"}
+                  </Badge>
                 </div>
-                <Badge
-                  variant={fest.status === "live" ? "default" : "secondary"}
-                  className={fest.status === "live" ? "bg-gradient-cta border-0 animate-pulse" : ""}
-                >
-                  {fest.status === "live" ? "🔴 LIVE" : "Upcoming"}
-                </Badge>
-              </div>
-              <div className="flex items-center justify-between">
-                <div>
-                  <span className="text-sm text-muted-foreground">{fest.platform}</span>
-                  <span className="mx-2 text-muted-foreground">·</span>
-                  <span className="text-sm font-semibold text-deal-savings">{fest.deals}</span>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-sm text-muted-foreground">{fest.platform}</span>
+                    <span className="mx-2 text-muted-foreground">·</span>
+                    <span className="text-sm font-semibold text-deal-savings">{fest.deals}</span>
+                  </div>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
                 </div>
-                <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-              </div>
-            </motion.div>
+              </motion.div>
+            </a>
           ))}
         </div>
       </div>
