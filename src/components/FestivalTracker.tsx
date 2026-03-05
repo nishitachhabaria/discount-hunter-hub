@@ -24,13 +24,19 @@ const FestivalTracker = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {festivals.map((fest, i) => (
-            <motion.div
+            <a
               key={i}
+              href={fest.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="bg-card rounded-2xl border border-border shadow-card p-6 hover:shadow-card-hover transition-all group cursor-pointer"
+            >
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
