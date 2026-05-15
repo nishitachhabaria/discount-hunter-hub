@@ -1,73 +1,148 @@
-# Welcome to your Lovable project
+# 🛍️ Offer Discount Finder Hub
 
-## Project info
+A smart web application that helps users discover the best deals, compare discounts, and make informed purchase decisions — all in one place.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<!-- Add project screenshots/demo GIF here -->
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 About the Project
 
-**Use Lovable**
+**Offer Discount Finder Hub** is designed to simplify the way users find and compare discounts across products. Instead of manually browsing multiple platforms, users get a centralized hub to discover genuine offers, avoid fake discounts, and optimize their shopping decisions.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- 🔍 **Smart Discount Discovery** — Find real offers across multiple categories
+- 🧾 **Fake Discount Detector** — Identifies inflated "original prices" and misleading deals
+- 🛒 **Smart Cart Optimizer** — Suggests the best combination of offers for maximum savings
+- ⚡ **Live Price Refresh** — Prices and deals updated in real time
+- 🎙️ **Voice Search** — Search for products and deals hands-free
+- 📱 **Fully Responsive** — Seamless experience across desktop, tablet, and mobile
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+| Layer | Technology |
+|---|---|
+| Frontend | React 18, TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| UI Components | shadcn/ui |
+| Version Control | Git & GitHub |
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or above)
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/nishitachhabaria/offer-discount-finder-hub.git
+
+# Step 2: Navigate into the project directory
+cd offer-discount-finder-hub
+
+# Step 3: Install dependencies
+npm install
+
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be running at **http://localhost:5173**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📁 Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+offer-discount-finder-hub/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page-level components
+│   ├── hooks/           # Custom React hooks
+│   ├── utils/           # Helper functions
+│   ├── types/           # TypeScript type definitions
+│   ├── App.tsx          # Root component
+│   └── main.tsx         # Entry point
+├── index.html
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
+└── package.json
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📦 Available Scripts
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+| Command | Description |
+|---|---|
+| `npm run dev` | Start local development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint checks |
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🌐 Deployment
 
-## Can I connect a custom domain to my Lovable project?
+This project can be deployed on any static hosting platform:
 
-Yes, you can!
+- **Vercel** — Connect your GitHub repo and deploy instantly
+- **Netlify** — Drag and drop the `dist/` folder after `npm run build`
+- **GitHub Pages** — Use the `gh-pages` package for static deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🔧 Editing the Code
+
+### Option 1 — Local IDE (Recommended)
+Clone the repo, make changes in VS Code, and push to GitHub.
+
+### Option 2 — GitHub Direct Edit
+Navigate to any file on GitHub → click the pencil (✏️) icon → edit and commit directly.
+
+### Option 3 — GitHub Codespaces
+Open the repo on GitHub → click **Code** → **Codespaces** → **New Codespace** for a browser-based dev environment.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the repository
+2. Create your feature branch: `git checkout -b feature/your-feature-name`
+3. Commit your changes: `git commit -m "Add: your feature description"`
+4. Push to the branch: `git push origin feature/your-feature-name`
+5. Open a Pull Request
+
+---
+
+## 👩‍💻 Author
+
+**Nishita Chhabaria**
+- GitHub: [@nishitachhabaria](https://github.com/nishitachhabaria)
+- LinkedIn: [nishita-chhabaria](https://www.linkedin.com/in/nishita-chhabaria/)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+> ⭐ If you found this project helpful, please consider giving it a star on GitHub!
